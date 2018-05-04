@@ -4,6 +4,7 @@ BloggerCoin/contracts
 
 
 
+
 参考：
 https://blog.csdn.net/turkeycock/article/details/79165602
 
@@ -34,6 +35,12 @@ truffle migrate --network development
 
 #truffle 提供的develop　
 truffle develop
+
+#使用钱包导入代币，需要bytecode,可以通过truffle development　环境，运行以下命令获取
+GustoCoin.bytecode
+
+在钱包，要添加合同，然后监听代币合同，就可以在创建的account中看到代币
+
 
 #测试
 truffle test
