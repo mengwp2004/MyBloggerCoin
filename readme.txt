@@ -1,4 +1,25 @@
 
+##solc 编译
+solc contracts/SimpleStorage.sol --bin --abi -o solc/simple
+
+##web3j
+
+#web3j　bin address
+https://github.com/web3j/web3j/releases/tag/v3.4.0
+
+#web3j command
+web3j solidity generate [--javaTypes|--solidityTypes] /path/to/<smart-contract>.bin /path/to/<smart-contract>.abi -o /path/to/src/main/java -p com.your.organisation.name
+
+##generate code
+
+#solidity
+web3j solidity generate  ./SimpleStorage.bin  ./SimpleStorage.abi  -o  java    -p com.test.Simple
+web3j solidity generate  ./GustoCoin.bin  ./GustoCoin.abi  -o  java    -p com.gustoboard.bm.bc.exchange.contract
+
+#truffle
+web3j truffle  generate  ./GustoCoin.json  -o  java    -p com.gustoboard.bm.bc.exchange.contract
+
+
 coin的例子:
 BloggerCoin/contracts
 
